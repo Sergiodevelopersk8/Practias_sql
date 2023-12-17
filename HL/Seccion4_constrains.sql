@@ -137,6 +137,9 @@ SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE 'customer' = 'customer';
 sintaxis de mysql
 ALTER TABLE customer ADD COLUMN city_id INT;
 ALTER TABLE customer ADD CONSTRAINT fk_city FOREIGN KEY (city_id) REFERENCES city(id);
+
+alter table propiedades add constraint fk_propiedades_vendedores FOREIGN KEY (vendedores_id) REFERENCES vendedores(id);
+
 */
 
 /*sintaxis de sql server*/
